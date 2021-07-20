@@ -17,7 +17,7 @@ const mapStateToProps = store => {
 }
 function maptoDispatchProps(dispatch){
     return {
-        addTask: (val)=>{dispatch({type: "add_Task", payload:val})}
+        addTask: (val)=>{dispatch({type: "addTask", payload:val})}
     }
 }
 export default connect(mapStateToProps, maptoDispatchProps)(InputContainer);
